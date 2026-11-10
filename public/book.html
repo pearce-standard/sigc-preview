@@ -127,6 +127,27 @@ table.t{font-size:12px}table.t th,table.t td{padding:9px 10px}
 .giftfig>img{position:static!important;height:auto!important;max-width:520px;object-fit:contain!important;box-shadow:0 18px 40px #17211740}
 @media(max-width:700px){.giftfig{height:auto!important;min-height:0!important;padding:24px}}
 @media(max-width:700px){.page-hero .actions{flex-wrap:wrap}}
+/* ===== Privilege Green pass (SW 6193 #7A8775), Nov 10 ===== */
+:root{--green:#7a8775;--green-deep:#6c7967;--dark:#7a8775;--ink:#222;--muted:#555}
+body{color:var(--ink)}
+.button{background:var(--green);border-color:var(--green);color:#fff;font-weight:700;font-size:14px}
+.button:hover{background:var(--green-deep);border-color:var(--green-deep)}
+.header-book,.mobile-book .button,.hero .button{font-size:14px!important;font-weight:700}
+.button.ghost{background:transparent;color:var(--ink);border-color:var(--ink)}.button.ghost:hover{background:var(--paper)}
+.utility{background:var(--green);color:#fff}
+footer{background:var(--green);color:#fff}
+.footer-bottom,.footer-gift{border-color:rgba(255,255,255,.45);color:#fff}
+.membership-section,.sec.green{background:var(--green);color:#fff}
+.membership-section .section-heading>p,.sec.green .sec-head>p{color:#fff}
+.membership-card,.sec.green .card{color:var(--ink)}
+.availability,.tag{background:var(--green);color:#fff;font-size:11px;font-weight:700}
+.tag.light{background:var(--patience);color:var(--ink)}
+table.t thead th{background:var(--green);color:#fff;font-weight:700}
+.cta-band{background:var(--green);color:#fff}
+.cta-band .button{background:var(--villa);border-color:var(--villa);color:#222}
+.cta-band .button:hover{background:#fff}
+.cta-band .text-link{color:#fff}
+.card.featured,.membership-card.featured{border-color:var(--green)}
 
 
 .sbx{background:#7a2f22;color:#fff;font-size:11px;letter-spacing:.4px;padding:8px 16px;text-align:center}
@@ -136,23 +157,23 @@ table.t{font-size:12px}table.t th,table.t td{padding:9px 10px}
 .bk-step>h2{font:700 11px var(--sans);letter-spacing:2px;margin-bottom:12px}
 .chips{display:flex;gap:8px;overflow-x:auto;padding-bottom:4px;-webkit-overflow-scrolling:touch}
 .chip{flex:0 0 auto;border:1px solid var(--line);background:var(--villa);padding:9px 12px;min-width:64px;text-align:center;font-size:12px;line-height:1.3;cursor:pointer;min-height:48px}
-.chip b{display:block;font:400 19px var(--serif)}.chip[aria-pressed=true]{background:var(--dark);color:var(--villa);border-color:var(--dark)}
+.chip b{display:block;font:400 19px var(--serif)}.chip[aria-pressed=true]{background:var(--green);color:#fff;border-color:var(--green);font-weight:700}
 .fields{display:flex;flex-wrap:wrap;gap:14px 18px;margin-top:12px}.fields label{display:flex;flex-direction:column;font-size:11px;font-weight:700;letter-spacing:.6px;gap:6px}
 .fields input,.fields select{font:15px var(--sans);padding:10px 12px;border:1px solid var(--line);background:var(--paper);color:var(--ink);min-height:46px;min-width:150px;border-radius:0}
-.seg{display:flex;flex-wrap:wrap;border:1px solid var(--dark);width:max-content;max-width:100%}.seg button{background:transparent;padding:11px 16px;font-size:13px;min-height:46px}.seg button+button{border-left:1px solid var(--dark)}.seg button[aria-pressed=true]{background:var(--dark);color:var(--villa)}
+.seg{display:flex;flex-wrap:wrap;border:1px solid var(--green);width:max-content;max-width:100%}.seg button{background:transparent;padding:11px 16px;font-size:13px;min-height:46px}.seg button+button{border-left:1px solid var(--dark)}.seg button[aria-pressed=true]{background:var(--green);color:#fff;font-weight:700}
 .hint{font-size:12px;color:var(--muted);margin-top:8px}
 .gridwrap{overflow-x:auto;border:1px solid var(--line);background:var(--paper);max-height:560px;overflow-y:auto}
 table.slots{border-collapse:collapse;width:100%;font-size:12px}table.slots th,table.slots td{border-bottom:1px solid var(--line);padding:0;text-align:center}
-table.slots thead th{position:sticky;top:0;background:var(--dark);color:var(--villa);padding:9px 4px;font-size:11px;z-index:1}
+table.slots thead th{position:sticky;top:0;background:var(--green);color:#fff;padding:9px 4px;font-size:11px;z-index:1}
 table.slots tbody th{padding:0 8px;white-space:nowrap;font-weight:700;background:var(--paper);position:sticky;left:0}
 table.slots td button{width:100%;min-height:42px;background:transparent;font-size:12px;padding:4px 2px}
 table.slots td button:hover{background:var(--patience)}table.slots td.no{color:#9a9a8e;background:#e6e2d7;font-size:11px}
-table.slots td button.sel{background:var(--dark);color:var(--villa);font-weight:700}
+table.slots td button.sel{background:var(--green);color:#fff;font-weight:700}
 .summary{position:sticky;top:130px;background:var(--paper);border:1px solid var(--dark);padding:24px}
 .summary h2{font-size:30px;margin-bottom:12px}.summary .line{display:flex;justify-content:space-between;gap:14px;border-bottom:1px solid var(--line);padding:8px 0;font-size:13px}
 .summary .total{font:400 26px var(--serif);display:flex;justify-content:space-between;padding-top:12px}
 .summary .button{width:100%;margin-top:16px;justify-content:center}.summary .err{color:#8c2a1b;font-size:13px;margin-top:12px}
-.summary .ok{background:var(--green);color:#172117;padding:14px;margin-top:12px;font-size:13px}
+.summary .ok{background:var(--green);color:#fff;padding:14px;margin-top:12px;font-size:13px}
 .summary .empty{font-size:13px;color:var(--muted)}
 .legend{display:flex;gap:16px;font-size:11px;color:var(--muted);margin:10px 0}.legend i{display:inline-block;width:12px;height:12px;border:1px solid var(--line);vertical-align:-2px;margin-right:5px}
 @media(max-width:1000px){.bk-wrap{grid-template-columns:1fr}.summary{position:static}}

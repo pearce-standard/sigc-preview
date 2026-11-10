@@ -104,3 +104,24 @@ table.t{font-size:12px}table.t th,table.t td{padding:9px 10px}
 .giftfig>img{position:static!important;height:auto!important;max-width:520px;object-fit:contain!important;box-shadow:0 18px 40px #17211740}
 @media(max-width:700px){.giftfig{height:auto!important;min-height:0!important;padding:24px}}
 @media(max-width:700px){.page-hero .actions{flex-wrap:wrap}}
+/* ===== Privilege Green pass (SW 6193 #7A8775), Nov 10 ===== */
+:root{--green:#7a8775;--green-deep:#6c7967;--dark:#7a8775;--ink:#222;--muted:#555}
+body{color:var(--ink)}
+.button{background:var(--green);border-color:var(--green);color:#fff;font-weight:700;font-size:14px}
+.button:hover{background:var(--green-deep);border-color:var(--green-deep)}
+.header-book,.mobile-book .button,.hero .button{font-size:14px!important;font-weight:700}
+.button.ghost{background:transparent;color:var(--ink);border-color:var(--ink)}.button.ghost:hover{background:var(--paper)}
+.utility{background:var(--green);color:#fff}
+footer{background:var(--green);color:#fff}
+.footer-bottom,.footer-gift{border-color:rgba(255,255,255,.45);color:#fff}
+.membership-section,.sec.green{background:var(--green);color:#fff}
+.membership-section .section-heading>p,.sec.green .sec-head>p{color:#fff}
+.membership-card,.sec.green .card{color:var(--ink)}
+.availability,.tag{background:var(--green);color:#fff;font-size:11px;font-weight:700}
+.tag.light{background:var(--patience);color:var(--ink)}
+table.t thead th{background:var(--green);color:#fff;font-weight:700}
+.cta-band{background:var(--green);color:#fff}
+.cta-band .button{background:var(--villa);border-color:var(--villa);color:#222}
+.cta-band .button:hover{background:#fff}
+.cta-band .text-link{color:#fff}
+.card.featured,.membership-card.featured{border-color:var(--green)}
