@@ -1,0 +1,21 @@
+/* Booking-only layout; brand, navigation and footer inherited from homepage.css. */
+.header nav a[aria-current="page"]{text-decoration:underline;text-underline-offset:6px}
+.booking-hero .hero-photo>img{object-position:43% center}
+.booking-hero .hero-copy{padding-top:42px;padding-bottom:38px}
+.booking-strip .group-note p{font-size:13px;color:var(--ink);line-height:1.7}
+.booking-guide{padding-block:54px}
+.booking-guide .compact-heading{align-items:flex-end}
+.booking-note{font-size:12px;color:var(--muted)}
+.booking-step-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:38px;list-style:none;margin:32px 0;padding:0}
+.booking-step-grid li{border-top:1px solid var(--line);padding-top:18px}
+.step-number{font-size:10px;letter-spacing:2px;display:block;margin-bottom:18px}
+.booking-step-grid h3{font-size:29px;margin-bottom:14px}
+.booking-step-grid p{font-size:13px;color:var(--muted)}
+.member-reminder{display:flex;align-items:center;justify-content:space-between;gap:30px;border-top:1px solid var(--line);padding-top:20px}
+.member-reminder p{font-size:12px;max-width:670px}.member-reminder strong{font-weight:700}.member-reminder .text-link{white-space:nowrap}
+.booking-faq{background:var(--paper);border-block:1px solid var(--line);padding-block:52px}
+.faq-layout{display:grid;grid-template-columns:1fr 1fr;gap:70px}.faq-layout h2{font-size:42px}.faq-intro{font-size:13px;color:var(--muted);margin-top:22px}
+.faq-list details{border-top:1px solid var(--line);padding:15px 0}.faq-list details:last-child{border-bottom:1px solid var(--line)}
+.faq-list summary{cursor:pointer;font-size:14px;font-weight:700;min-height:36px;padding-right:12px}.faq-list p{font-size:13px;color:var(--muted);padding:3px 20px 5px 0}
+@media(max-width:1100px){.booking-hero h1{font-size:60px}.booking-strip>.container{gap:24px}.booking-step-grid{gap:25px}.booking-step-grid h3{font-size:26px}}
+@media(max-width:700px){.booking-hero .hero-copy{padding:30px 24px 27px}.booking-hero h1{font-size:49px}.booking-hero .hero-intro{font-size:21px}.booking-hero .hero-photo{height:250px;min-height:250px}.booking-hero .hero-photo>img{object-position:center}.booking-hero .actions{justify-content:space-between;gap:18px}.booking-strip>.container>.group-note{display:block;border-top:1px solid #b6aa97;padding-top:12px}.booking-strip .group-note p{font-size:12px;max-width:none}.booking-strip .group-note br{display:none}.booking-guide{padding-block:35px}.booking-guide .compact-heading{align-items:flex-start;gap:16px}.booking-guide .compact-heading h2{font-size:35px}.booking-note{font-size:12px}.booking-step-grid{grid-template-columns:1fr;gap:21px;margin:25px 0}.booking-step-grid li{display:grid;grid-template-columns:28px 1fr;gap:8px 13px;padding-top:15px}.step-number{margin:5px 0 0;grid-row:1/3}.booking-step-grid h3{font-size:27px;margin:0}.booking-step-grid p{font-size:12px;grid-column:2}.member-reminder{flex-direction:column;align-items:flex-start;gap:5px}.member-reminder p{font-size:12px}.booking-faq{padding-block:35px}.faq-layout{grid-template-columns:1fr;gap:27px}.faq-layout h2{font-size:35px}.faq-intro{font-size:12px;margin-top:18px}.faq-list summary{font-size:13px}.faq-list p{font-size:12px}}
