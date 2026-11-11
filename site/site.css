@@ -131,3 +131,5 @@ table.t thead th{background:var(--green);color:#fff;font-weight:700}
 .membership-card .text-link,.card .text-link{justify-content:flex-start}
 .host-group{cursor:default}.host-group:hover h3{text-decoration:none}.host-group h3{padding-right:0}
 .footer-main>a:last-child{gap:0}
+/* ===== White logo on green (Eric, Nov 10 11 PM) ===== */
+.footer-logo{background:transparent;padding:0}
