@@ -125,3 +125,9 @@ table.t thead th{background:var(--green);color:#fff;font-weight:700}
 .cta-band .button:hover{background:#fff}
 .cta-band .text-link{color:#fff}
 .card.featured,.membership-card.featured{border-color:var(--green)}
+/* ===== No arrow glyphs (Eric, Nov 10 PM): centered button labels, plain underlined links ===== */
+.button{justify-content:center;gap:0;text-align:center}
+.text-link{justify-content:flex-start;gap:0}
+.membership-card .text-link,.card .text-link{justify-content:flex-start}
+.host-group{cursor:default}.host-group:hover h3{text-decoration:none}.host-group h3{padding-right:0}
+.footer-main>a:last-child{gap:0}
