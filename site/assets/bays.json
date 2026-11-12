@@ -1,0 +1,47 @@
+[
+ {
+  "id": "bay-1",
+  "label": "Bay 1",
+  "bookingParam": "?bay=1",
+  "plan_room": "100",
+  "position": "west end, back-left corner; screen on west wall",
+  "private": false,
+  "privateVariant": null
+ },
+ {
+  "id": "bay-2",
+  "label": "Bay 2",
+  "bookingParam": "?bay=2",
+  "plan_room": "101",
+  "position": "west end, front-left by the storefront; screen on west wall",
+  "private": false,
+  "privateVariant": null
+ },
+ {
+  "id": "bay-3",
+  "label": "Bay 3",
+  "bookingParam": "?bay=3",
+  "plan_room": "102",
+  "position": "left of the restrooms, back wall; screen on back wall",
+  "private": false,
+  "privateVariant": null
+ },
+ {
+  "id": "bay-4",
+  "label": "Bay 4",
+  "bookingParam": "?bay=4",
+  "plan_room": "110",
+  "position": "right of the lounge, back wall; screen on back wall",
+  "private": false,
+  "privateVariant": null
+ },
+ {
+  "id": "bay-5",
+  "label": "Bay 5",
+  "bookingParam": "?bay=5",
+  "plan_room": "111",
+  "position": "east end, back corner next to storage/riser; screen on east wall",
+  "private": false,
+  "privateVariant": "pending Eric: YGB lists a separate '5 Private' entry, likely a private-booking version of Bay 5"
+ }
+]

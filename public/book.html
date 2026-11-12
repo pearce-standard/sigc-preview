@@ -158,6 +158,69 @@ table.t thead th{background:var(--green);color:#fff;font-weight:700}
 .footer-logo{background:transparent;padding:0}
 
 
+/* ===== Interactive bay map (Nov 12) ===== */
+.bm-wrap{display:grid;grid-template-columns:minmax(0,1fr) 290px;gap:26px;align-items:start}
+.bm-figure{background:var(--villa);border:1px solid var(--line);padding:14px}
+.baymap-svg{display:block;width:100%;height:auto}.baymap-m{display:none}
+.bm-shell{fill:#29392f}.bm-floor{fill:#efe9dc}
+.bm-room{stroke:#c9c8b8;stroke-width:2}.bm-rr{fill:#e6dfd0}.bm-green{fill:#a9b59f}.bm-desk{fill:#e2d3bf}.bm-lounge{fill:#f6f1e6}
+.bm-muted{fill:#e3ddcf;stroke:#d2cbbb}.bm-furn{fill:#d8c8b0;stroke:#bfae95;stroke-width:1.5}.bm-cup{fill:#29392f}
+.bm-label{fill:#50594d;font-family:Arial,Helvetica,sans-serif;font-weight:700;letter-spacing:1.5px}
+.bm-small{fill:#50594d;font-family:Arial,Helvetica,sans-serif;letter-spacing:1.5px;font-weight:700}
+.bm-entry{fill:#222;font-family:Arial,Helvetica,sans-serif;font-weight:700;letter-spacing:2px}
+.bm-door{stroke:#efe9dc;stroke-width:16}
+.bm-bay{cursor:pointer;outline:none}
+.bm-bayfill{fill:#7a8775;stroke:#f0ece2;stroke-width:4;transition:fill .15s}
+.bm-seat{fill:#e2d3bf;opacity:.55;pointer-events:none}
+.bm-screen{stroke:#f0ece2;stroke-width:9;stroke-linecap:round}
+.bm-bayname{fill:#fff;font-family:Georgia,'Times New Roman',serif}
+.bm-bay .bm-small{fill:#fff;opacity:.9}
+.bm-bay:hover .bm-bayfill,.bm-bay:focus-visible .bm-bayfill{fill:#6c7967}
+.bm-bay:focus-visible .bm-bayfill{stroke:#222;stroke-width:6}
+.bm-bay.on .bm-bayfill{fill:#29392f}
+.bm-legend{display:flex;gap:8px 14px;align-items:center;flex-wrap:wrap;font-size:11px;color:var(--muted);margin:12px 0 0}
+.bm-legend .k{display:inline-block;width:14px;height:10px;margin-right:-8px}.k-bay{background:#7a8775}.k-seat{background:#e2d3bf}.k-screen{background:#f0ece2;border:1px solid #29392f}
+.bm-panel{background:var(--villa);border:1px solid var(--line);padding:24px 22px;position:sticky;top:90px}
+.bm-panel h3{font-size:32px;margin:6px 0 8px}.bm-panel p{font-size:13px;color:var(--muted)}
+.bm-detail .button{width:100%;margin-top:4px}
+.bm-chips{display:grid;grid-template-columns:repeat(5,1fr);gap:6px;margin-top:18px;border-top:1px solid var(--line);padding-top:16px}
+.bm-chip{font:700 12px var(--sans);padding:9px 4px;border:1px solid var(--ink);background:transparent;color:var(--ink);cursor:pointer;min-height:40px}
+.bm-chip:hover{background:var(--paper)}.bm-chip.on{background:var(--green);border-color:var(--green);color:#fff}
+@media(max-width:980px){.bm-wrap{grid-template-columns:1fr}.bm-panel{position:static}}
+@media(max-width:700px){.baymap-d{display:none}.baymap-m{display:block;max-width:360px;margin:0 auto}.bm-figure{padding:12px}
+}
+
+/* ===== League sign-up form (Nov 12) ===== */
+.lf-preview{border:1px dashed #818677;background:#ece9df;font-size:10px;font-weight:700;letter-spacing:1px;padding:8px 12px;margin-bottom:14px}
+.lf-box{background:var(--villa);border:1px solid var(--line)}
+.lf-tabs{display:flex;border-bottom:1px solid var(--line)}
+.lf-tabs button{flex:1;font:700 14px var(--sans);padding:16px 12px;border:0;background:var(--paper);color:var(--muted);cursor:pointer;border-bottom:3px solid transparent}
+.lf-tabs button[aria-selected=true]{background:var(--villa);color:var(--ink);border-bottom-color:var(--green)}
+.lf-panel{padding:24px}.lf-intro{font:italic 18px/1.5 var(--serif);margin:0 0 18px}
+.lf-grid{display:grid;grid-template-columns:1fr 1fr;gap:16px 20px}
+.lf-field{display:flex;flex-direction:column;gap:6px;font-size:12px;font-weight:700;letter-spacing:.3px;border:0;padding:0;margin:0;min-width:0}
+.lf-field em{font-weight:400;font-style:normal;color:var(--muted)}
+.lf-field small{font-weight:400;color:var(--muted);font-size:11px}
+.lf-field input,.lf-field select,.lf-field textarea{font:15px var(--sans);padding:11px 12px;border:1px solid #b8b7a6;background:#fff;color:var(--ink);border-radius:0;width:100%;min-height:44px}
+.lf-field input:focus,.lf-field select:focus,.lf-field textarea:focus{outline:2px solid var(--green);outline-offset:1px}
+.lf-set legend{margin-bottom:8px}.lf-set>div{display:flex;gap:18px;min-height:44px;align-items:center}
+.lf-radio{display:flex;gap:7px;align-items:center;font-weight:400;font-size:15px}.lf-radio input{width:18px;height:18px;min-height:0;accent-color:#7a8775}
+.lf-wide{grid-column:1/-1}.lf-sub{font-size:10px;letter-spacing:1.5px;font-weight:700;border-top:1px solid var(--line);padding-top:14px;margin:4px 0 -4px}
+.lf-check{display:flex;gap:10px;align-items:flex-start;font-size:13px;margin:18px 0}.lf-check input{width:20px;height:20px;margin-top:1px;accent-color:#7a8775;flex:none}
+.lf .button{min-width:260px}
+.bad input,.bad select,.bad textarea{border-color:#a3402f;background:#fff6f3}.lf-check.bad span,.lf-set.bad legend{color:#a3402f}
+.lf-msg{font-size:14px;margin:14px 0 0;min-height:1em}.lf-msg.ok{background:#e9eee5;border-left:3px solid var(--green);padding:12px 14px}.lf-msg.err{color:#a3402f}
+.lf-tools{margin-top:16px;font-size:12px;color:var(--muted)}.lf-tools summary{cursor:pointer}
+/* ===== Coaches, 2-up with portrait photos ===== */
+.coach2{display:grid;grid-template-columns:42% 1fr;gap:22px;align-items:start}
+.coach2 img,.coach2 .ph{width:100%;aspect-ratio:4/5;object-fit:cover;object-position:center 30%}
+.coach2 .ph{background:var(--patience);display:grid;place-items:center;font-size:11px;letter-spacing:1px;color:var(--muted)}
+.coach2 blockquote{margin:6px 0 0;font:italic 16px/1.5 var(--serif)}
+@media(max-width:1100px){.coaches{grid-template-columns:1fr}}
+@media(max-width:700px){.lf-grid{grid-template-columns:1fr}.lf-panel{padding:18px}.lf .button{width:100%;min-width:0}.lf-tabs button{font-size:13px;padding:14px 8px}
+.coach2{grid-template-columns:1fr}.coach2 img{aspect-ratio:4/4.2}}
+
+
 .sbx{background:#7a2f22;color:#fff;font-size:11px;letter-spacing:.4px;padding:8px 16px;text-align:center}
 .bk-wrap{display:grid;grid-template-columns:1fr 360px;gap:36px;align-items:start;padding-block:36px 60px}
 .bk-head{padding-top:34px}.bk-head h1{font-size:clamp(42px,4.4vw,60px);margin-bottom:10px}.bk-head p.intro{font:20px/1.4 var(--serif);color:var(--ink)}
